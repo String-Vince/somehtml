@@ -1,0 +1,16 @@
+body{
+    color: #660c0c;
+    text-align: center;
+    margin: 20px;
+}
+button{
+    background-color: chocolate;
+    width:50px;
+    transition:3s 1s;
+ 
+}
+button:hover{
+    background-color: aquamarine;
+    width: 100px;
+}
+    

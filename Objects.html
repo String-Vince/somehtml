@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    const product={
+      name: 'socks',
+      price: 1090
+    }
+    console.log(product);
+
+    product.name='Rawr';
+    console.log(product);
+    product.Yes ='Omsim';
+    console.log(product);
+    delete product.Yes;
+    console.log(product)
+
+    const product2={
+      name: 'shirt',
+      'delivery-time' : '1 day',
+      Oms: {
+        star: 4.5,
+        rating: 87
+      },
+      fun: function Deal(){
+        console.log('IM INSIDE');
+      }
+    }
+
+    console.log(product2['name']);
+    console.log(product2['delivery-time']);
+    console.log(product2.Oms.star);
+    product2.fun();
+
+    console.log(JSON.stringify(product2));
+    const jsonString=JSON.stringify(product2); // Make object string or to support by JSON
+
+    console.log(JSON.parse(jsonString)); //For making the JSON object again
+   
+  </script>
+</body>
+</html>
